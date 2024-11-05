@@ -1,0 +1,69 @@
+% Copyright 2019 by Andrea Omicini <andrea.omicini@unibo.it>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+\mode<presentation>
+%
+\setbeamertemplate{navigation symbols}{}
+%
+\useoutertheme{infolines}
+\useinnertheme[shadow=true]{rounded}
+%%% TO UNCOMMENT FOR LOCAL DIR
+\usecolortheme{bolognafc}
+%% Alma Logo
+%\pgfdeclareimage[width=\paperwidth]{bg}{img/almacesena-background}
+%\setbeamertemplate{background}{\pgfuseimage{bg}}
+% text
+\setbeamercolor{normal text}{fg=bolognafcblue!10!black}
+\setbeamercolor{alerted text}{fg=bolognafcred!90!black}
+\setbeamercolor{quote}{fg=bolognafcblue!80!white}
+% bullets
+\setbeamercolor*{item}{fg=bolognafcred}
+% front page
+\setbeamercolor{title}{fg=bolognafcblue!90!black}
+\setbeamercolor{subtitle}{fg=bolognafcblue!90!white}
+\setbeamercolor{author}{fg=bolognafcred!90!black}
+\setbeamercolor{institute}{fg=bolognafcblue!75!black}
+\setbeamercolor{date}{fg=bolognafcblue!75!white}
+% block header
+\setbeamercolor{block title}{use=structure,fg=bolognafcsilver!90!white,bg=bolognafcblue!75!black}
+\setbeamercolor{block title alerted}{use=alerted text,fg=bolognafcsilver!50!white,bg=bolognafcteal}
+\setbeamercolor{block title example}{use=example text,fg=bolognafcblue!30!black,bg=bolognafcblue!30!white}
+% block body
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=bolognafcblue!2!white}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=bolognafcblue!5!white}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=bolognafcblue!7!white}
+% table of content
+\setbeamercolor{section in toc}{fg=bolognafcblue!40!black}
+\setbeamercolor{subsection in toc}{fg=bolognafcblue!50!black}
+% footnote
+\setbeamercolor{footnote mark}{fg=bolognafcred!90!black}
+\setbeamercolor{footnote}{fg=bolognafcblue!25!gray}
+% biblio
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeamercolor{bibliography entry author}{fg=bolognafcblue!90!black}
+\setbeamercolor{bibliography entry title}{fg=bolognafcred!75!black} 
+\setbeamercolor{bibliography entry location}{fg=bolognafcblue!75!gray} 
+\setbeamercolor{bibliography entry note}{fg=bolognafcsilver!50!black}  
+% abstract
+\setbeamercolor*{abstract title}{fg=bolognafcblue}
+\setbeamerfont*{abstract title}{family=\sffamily}
+\setbeamercolor*{abstract}{fg=purple!50!black}
+\setbeamerfont*{abstract}{family=\rmfamily,size=\small}
+% Citation
+\newcommand{\ccite}[1]{{\textcolor{bolognafcsilver!80!black}{\textsuperscript{\tiny\cite{#1}}}}}
+\newcommand{\cccite}[1]{{\textcolor{bolognafcsilver}{\textsuperscript{\tiny\cite{#1}}}}}
+% URL
+\newcommand{\uurl}[1]{{\textcolor{bolognafcred!75!black}{\scriptsize\url{#1}}}}
+\newcommand{\uuurl}[1]{{\textcolor{bolognafcsilver!80!black}{\tiny\url{#1}}}}
+% emph 
+\renewcommand{\emph}[1]{\textcolor{bolognafcred!90!black}{\textit{#1}}}
+% alert 
+%\renewcommand{\alert}[1]{\textcolor{bolognafcblue!90!black}{#1}}
+\newcommand{\aalert}[1]{\textcolor{bolognafcsilver!90!black}{\it#1}}
+% speaker
+\newcommand{\speaker}[1]{\textcolor{bolognafcblue!75!red}{#1}}
+\newcommand{\sspeaker}[1]{\textcolor{bolognafcred!20!white}{\it#1}}
+% itemize
+\mode
+<all>
