@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AMS Beamer series / Bologna FC / Template
+% Andrea Omicini
+% Alma Mater Studiorum - Università di Bologna
+% mailto:andrea.omicini@unibo.it
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[handout]{beamer}\mode<handout>{\usetheme{default}}
+%
+\documentclass[presentation, 10pt,aspectratio=169]{beamer}\mode<presentation>{\usetheme{AMSBolognaFC}}
+%\documentclass[handout]{beamer}\mode<handout>{\usetheme{AMSBolognaFC}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetheme{metropolis}
+  
+\usepackage{lmodern}
+\usepackage{fontawesome}
+\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\usepackage{arev}
+\usepackage{multicol}
+\usepackage{wasysym}
+\usepackage{amsmath,blkarray}
+\usepackage{centernot}
+\usepackage{fontawesome}
+\usepackage{fancyvrb}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\version}{1}
+\usepackage{biblatex}
+	\makeatletter
+
+% #FAFAFA
+\definecolor{customfg}{RGB}{250, 250, 250} % White
+% #23373B
+\definecolor{custombg}{RGB}{35, 55, 59} % Dark Blue
+\addbibresource{biblio.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Il Potenziale dell'Intelligenza Artificiale Collettiva]
+{Oltre l'IA Individuale: }
+%
+\subtitle[Il Potenziale dell'Intelligenza Artificiale Collettiva]
+{Il Potenziale dell'Intelligenza Artificiale Collettiva}
+%
+\author[Aguzzi]
+{\textbf{Gianluca Aguzzi} \href{mailto:gianluca.aguzzi@unibo.it}{gianluca.aguzzi@unibo.it}}
+%
+\institute[DISI, Univ.\ Bologna]
+{Dipartimento di Informatica -- Scienza e Ingegneria (DISI)\\\textsc{Alma Mater Studiorum} -- Universit{\`a} di Bologna}
+%
+\renewcommand{\dateseparator}{/}
+\date[\today]{\today}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+\metroset{block=fill}
+\begin{document}
+
+\nocite{*}
+\frame{\titlepage}
+
+{
+\setbeamercolor{background canvas}{bg=custombg} % Set background to foreground color
+\setbeamercolor{normal text}{fg=customfg}    
+
+\begin{frame}[c]
+	
+	{
+	\color{customfg}
+	\begin{center}
+	\Large\textbf{Hello World! :)}
+
+	\begin{tikzpicture}
+		\clip (0,0) circle (1.5cm) node {\includegraphics[width=3cm]{img/me-3.jpeg}};
+	\end{tikzpicture}
+	\color{customfg}{
+	\small
+	\begin{itemize}
+		\color{customfg}
+				\item \alert{\faGraduationCap} ~ \textbf{Dottorato} in Ingegneria e Scienze Informatiche (2024)
+				\item \alert{\faPencilSquare} ~ \textbf{Professore a contratto} @ Università di Bologna (campus di Cesena)
+				\item \alert{\faFlask} ~ \textbf{Background}: Ingegneria del Software (Sviluppatore Scala) \& Apprendimento Automatico (Apprendimento per Rinforzo)
+				\item \alert{\faSearch} ~ \textbf{Interessi di Ricerca}: Intelligenza Collettiva, Apprendimento per Rinforzo Multi-Agente
+			\end{itemize}
+	}
+	\end{center}
+}
+\end{frame}
+}
+
+\begin{frame}{Outline}
+	\begin{itemize}
+		\item Oggi parleremo di \alert{\textbf{Intelligenza Collettiva}} e \alert{\textbf{Sistemi Collettivi Adattativi}}, focalizzandosi su
+		\begin{itemize}
+			\item Cosa sono e come si differenziano da altri sistemi
+			\item Come si progettano sistemi che mostrano intelligenza collettiva
+			\begin{itemize}
+				\item \emph{Approcci manuali} (ispirati biologia, programmazione aggregata)
+				\item \emph{Approcci automatici} (algoritmi genetici, apprendimento per rinforzo multi-agente)
+			\end{itemize}
+			\item Direzioni di ricerca
+			\begin{itemize}
+				\item \emph{Approcci ibridi}
+				\item Modelli fondazionali per l'intelligenza collettiva
+			\end{itemize}
+			Ma prima, un po' di contesto... :)
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\section{Contesto - Sistemi Collettivi Adattativi}
+%% change the background image
+{
+\usebackgroundtemplate%
+{\includegraphics[width=\paperwidth,height=\paperheight]{img/frame-1.png}}
+\begin{frame}\end{frame}
+}
+{
+\usebackgroundtemplate%
+{\includegraphics[width=\paperwidth,height=\paperheight]{img/frame-2.png}}
+\begin{frame}\end{frame}
+}
+{
+\usebackgroundtemplate%
+{\includegraphics[width=\paperwidth,height=\paperheight]{img/frame-3.png}}
+\begin{frame}\end{frame}
+}
+\begin{frame}{Panorama Computazionale Moderno}
+	\begin{itemize}
+		\item Centinaia/Migliaia di dispositivi computazionali
+		\item Altamente eterogenei e distribuiti
+		\item Interconnessi tramite reti di comunicazione
+		\begin{itemize}
+			\item \textbf{Internet of Things} (IoT)
+		\end{itemize}
+		\item Applicazioni \alert{\emph{situate}} e \alert{\emph{ubiquite}}
+		\begin{itemize}
+			\item Context-aware
+			\item Pervasiveness (la computazione che ``scompare'')
+		\end{itemize}
+		\item L'umano è parte integrante del sistema
+		\begin{itemize}
+			\item Human-in-the-loop
+		\end{itemize}
+		\item \alert{\textbf{Come progetto sistemi artificiali che si adattano a questo contesto?}}
+		\item \alert{\faLeaf} ~ Inspiriamoci a come la natura affronta problemi simili ~ \alert{\faLeaf}
+	\end{itemize}
+\end{frame}
+\begin{frame}[fragile]{Animali Sociali}
+\begin{center}
+\includegraphics[width=0.32\textwidth]{example-image-a}
+\includegraphics[width=0.32\textwidth]{example-image-b}
+\includegraphics[width=0.32\textwidth]{example-image-c}
+\end{center}
+In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{\alert{\textbf{intelligenza collettiva}}}.
+\end{frame}
+{
+
+\setbeamercolor{background canvas}{bg=custombg} % Set background to foreground color
+\setbeamercolor{normal text}{fg=customfg}    
+
+\begin{frame}[c]
+	
+	{
+	\color{customfg}
+
+	\begin{center}
+	\Large\textbf{Intelligenza Collettiva} \\
+	
+	L'\alert{\emph{intelligenza}} che può essere attribuita a un \alert{\emph{collettivo}}.
+	\\ \vspace{1cm}
+		\large{\alert{Intelligenza}} \faArrowRight ~ Misura la capacità di un agente di raggiungere \underline{\emph{obiettivi}} in un'ampia gamma di ambienti.  \\
+
+		\large{\alert{Collettivo}} \faArrowRight ~ Gruppi di individui (membri) che manifestano una qualche forma di \underline{\emph{unità}}. \\
+	\end{center}
+
+	\vspace{1cm}	
+}
+\end{frame}
+}
+\begin{frame}{Intelligenza Collettiva E Sistemi Collettivi Adattativi}
+	\begin{alertblock}{Definizioni -- Cont.}
+		\begin{itemize}
+			\item \emph{Gruppi di individui che agiscono collettivamente in modi che sembrano intelligenti.} -- focus sul concetto di \alert{gruppo}
+			\item \emph{Intelligenza che emerge a livello macro di un collettivo e trascende quella dei singoli individui.} -- focus sul livello \alert{macro} e \alert{micro}
+		\end{itemize}
+	\end{alertblock}
+	\begin{exampleblock}{Sottoclassi di Intellingenza Collettiva}
+		\begin{itemize}
+			\item Intellingenza di \emph{Sciame} (Swarm Intelligence): Intelligenza collettiva osservata in gruppi di \emph{animali}
+			\item Intelligenza di Folle (Crodwd Intellingece): Intelligenza collettiva osservata in gruppi di \emph {persone}
+		\end{itemize}
+	\end{exampleblock}
+	\begin{block}{Sistemi Collettivi Adattativi (CAS)}
+		Sistemi composti da un insieme di agenti autonomi che mostrano intellingenza collettiva.
+	\end{block}
+\end{frame}
+\begin{frame}{Collective Adaptive System}
+\begin{alertblock}{Caratteristiche (inspirate dagli animali sociali)}
+	\begin{itemize}
+		\item \textbf{Decentralizzazione} \faArrowRight ~ Nessun controllo centrale
+		\item \textbf{Adattabilità} \faArrowRight ~ Capacità di adattarsi a cambiamenti ambientali
+		\item \textbf{Scalabilità} \faArrowRight ~ Capacità di crescere in numero di individui 
+		\item \textbf{Emergenza} \faArrowRight ~ Comportamenti collettivi che emergono da interazioni locali
+		\item \textbf{Robustezza} \faArrowRight ~ Capacità di sopportare guasti
+	\end{itemize}	
+\end{alertblock}
+\end{frame}
+
+\section{Approcci Manuali}
+	\subsection{Inspirati alla Biologia}
+	\subsection{Programmazione Aggregata}
+\section{Approcci Automatici}
+	\subsection{Algoritmi Genetici}
+	\subsection{Apprendimento per Rinforzo multi-agente}
+\section{Direzioni di Ricerca}
+	\subsection{Sistemi Ibridi}
+	\subsection{Modelli Fondazionali per l'Intelligenza Collettiva}
+%//
+%===============================================================================
+
+%/////////
+
+%===============================================================================
+\section*{\refname}
+%===============================================================================
+
+%/////////
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
