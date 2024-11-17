@@ -235,6 +235,7 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \end{frame}
 \section{Approcci Manuali}
 
+
 \subsection{Inspirati alla Biologia}
 
 \begin{frame}{Soluzioni Swarm-inspired}
@@ -262,16 +263,19 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 	\includegraphics[width=\textwidth]{img/kilobot.png}
 \end{frame}
 
-\begin{frame}{Limiti degli algoritmi Swarm-Inspired}
-\includegraphics[width=\textwidth]{img/rise-of-swarm.png}
+\begin{frame}{Limiti degli algoritmi Swarm-Limiti degli algoritmi Swanspired}
+\centering
+\includegraphics[width=0.8\textwidth]{img/rise-of-swarm.png}
+
+{\color{red}\faThumbsDown}~\textbf{Abstraction Gap} {\color{red}\faThumbsDown} ~\textbf{Scalabilità} {\color{red}\faThumbsDown} ~\textbf{Robustezza} 
 \end{frame}
-\begin{frame}{Limiti degli algoritmi Swarm-Inspired}
-	\begin{itemize}
-		\item \textbf{Abstraction Gap:} Progettare sistemi partendo da comportamenti locali è difficile visto che non è chiaro come questi si traducano in comportamenti collettivi
-		\item \textbf{Scalabilità:} Trovato un comportamento locale che funziona, è difficile combinarne più di uno in modo che il sistema collettivo funzioni (e.g.)
-		\item \textbf{Robustezza:} I sistemi basati su swarm intelligence sono spesso fragili e dipendi da parametri specifici
-	\end{itemize}
-\end{frame}
+%\begin{frame}{Limiti degli algoritmi Swarm-Inspired}
+%	\begin{itemize}
+%		\item \textbf{Abstraction Gap:} Progettare sistemi partendo da comportamenti locali è difficile visto che non è chiaro come questi si traducano in comportamenti collettivi
+%		\item \textbf{Scalabilità:} Trovato un comportamento locale che funziona, è difficile combinarne più di uno in modo che il sistema collettivo funzioni (e.g.)
+%		\item \textbf{Robustezza:} I sistemi basati su swarm intelligence sono spesso fragili e dipendi da parametri specifici
+%	\end{itemize}
+%\end{frame}
 
 {
 
@@ -306,7 +310,7 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 			\begin{itemize}
 				\item Astrazione: \emph{swarm}
 			\end{itemize}
-			\item \textbf{Aggregate computing}: Linguaggio di programmazione top-down per sistemi collettivi Adattativi
+			\item \alert{\textbf{Aggregate computing}}: Linguaggio di programmazione top-down per sistemi collettivi Adattativi
 			\begin{itemize}
 				\item Astrazione: \emph{campi computazionali}
 			\end{itemize}
@@ -314,7 +318,15 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 	\end{block}
 \end{frame}
 \begin{frame}{Aggregate Computing - Intuizione}
-
+	\centering
+	\Large Programma l'\alert{aggregato}, non gli \emph{individui}
+	\includegraphics[width=0.6\textwidth]{img/overview.png}
+\end{frame}
+\begin{frame}{Aggregate Computing - Intuizione}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{img/ac.png}
+		\includegraphics[width=0.4\textwidth]{img/channel.pdf}
+	\end{center}
 \end{frame}
 \begin{frame}{Aggregate Computing - Casi di Studio}
 
