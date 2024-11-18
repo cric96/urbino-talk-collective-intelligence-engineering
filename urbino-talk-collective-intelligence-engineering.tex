@@ -67,7 +67,7 @@
 	{
 	\color{customfg}
 	\begin{center}
-	\Large\textbf{Hello World! :)}
+	\Large\textbf{Hello World! \faSmileO}
 
 	\begin{tikzpicture}
 		\clip (0,0) circle (1.5cm) node {\includegraphics[width=3cm]{img/me-3.jpeg}};
@@ -102,7 +102,7 @@
 				\item \emph{Approcci ibridi}
 				\item Modelli fondazionali per l'intelligenza collettiva
 			\end{itemize}
-			Ma prima, un po' di contesto... :)
+			Ma prima, un po' di contesto \alert{\faSmileO}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -165,13 +165,14 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 	\color{customfg}
 
 	\begin{center}
-	\Large\textbf{Intelligenza Collettiva} \\
+	\Large\textbf{Intelligenza Collettiva} \emph{Artificiale} \\
 	
 	L'\alert{\emph{intelligenza}} che può essere attribuita a un \alert{\emph{collettivo}}.
 	\\ \vspace{1cm}
 		\large{\alert{Intelligenza}} \faArrowRight ~ Misura la capacità di un agente di raggiungere \underline{\emph{obiettivi}} in un'ampia gamma di ambienti.  \\
 
 		\large{\alert{Collettivo}} \faArrowRight ~ Gruppi di individui (membri) che manifestano una qualche forma di \underline{\emph{unità}}. \\
+
 	\end{center}
 
 	\vspace{1cm}	
@@ -208,8 +209,8 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 
 \begin{exampleblock}{Sfide ingegneristiche}
 	\begin{itemize}
-		\item \textbf{Fallimenti} \faArrowRight ~ I fallimenti del sistema (es. guasti, perdita dei messaggi, ecc.) sono così comuni che devono diventare parte del design
-		\item \textbf{Mapping tra micro e macro} \faArrowRight ~ Come i comportamenti locali dei singoli agenti si traducono in comportamenti collettivi?
+		\item \textbf{Fallimenti} \faArrowRight ~ I fallimenti sono così comuni che diventano parte del design
+		\item \textbf{Mapping tra micro e macro} \faArrowRight ~ Come i comportamenti locali dei singoli agenti si traducono nei comportamenti collettivi?
 		\item \textbf{Unknown unknowns} \faArrowRight ~ Come progettare sistemi che si adattano a situazioni non previste?
 	\end{itemize}
 \end{exampleblock}
@@ -324,37 +325,78 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \end{frame}
 \begin{frame}{Aggregate Computing - Intuizione}
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]{img/ac.png}
-		\includegraphics[width=0.4\textwidth]{img/channel.pdf}
+		\begin{minipage}{0.3\textwidth}
+			\includegraphics[width=\textwidth]{img/ac.png}
+			\\[0.75cm]
+			\centering \textbf{Astrazione collettiva}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			\includegraphics[width=\textwidth]{img/channel.pdf}
+			\centering \textbf{Calcolo Funzionale} 
+		\end{minipage}
+		\\[0.3cm]
+		\begin{minipage}{0.3\textwidth}
+			\includegraphics[width=\textwidth]{img/cesena0}
+			\centering \alert{\textbf{Risultato emergente}}
+		\end{minipage}
 	\end{center}
 \end{frame}
 \begin{frame}{Aggregate Computing - Casi di Studio}
-
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\textwidth]{img/crowd-steering.png}
+		\centering
+		\textbf{Crowd Steering}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\textwidth]{img/iot.png}
+		\centering
+		\textbf{Smart Cities}
+	\end{minipage}
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\textwidth]{img/smart-tracking.png}
+		\centering
+		\textbf{Smart Cameras}
+	\end{minipage}
 \end{frame}
 \begin{frame}{Aggregate Computing - Macro Swarm}
-
+	Un framework per progettare sistemi di swarm robotics in modo \textbf{dichiarativo} e \textbf{composizionale}
+	\begin{center}
+		\includegraphics[height=2.8cm]{img/constant-movement.png}
+		\includegraphics[height=2.8cm]{img/obstracle.png}		
+		\includegraphics[height=2.8cm]{img/explore-2.png}
+		\includegraphics[height=2.8cm]{img/flock.png}
+	  \end{center}
+	  \begin{center}
+		\includegraphics[height=2.8cm]{img/shapes.png}
+	  \end{center}
+	  %\begin{center}
+	%\includegraphics[height=2.3cm]{img/team-formation.png}
+%		\includegraphics[height=2.3cm]{img/circle-formation.png}
+%		\includegraphics[height=2.3cm]{img/explore.png}
+%	  \end{center}
 \end{frame}
 \section{Approcci Automatici}
 \begin{frame}{Limiti degli Approcci Manuali}
 	\begin{itemize}
-		\item \textbf{Adattabilità:} Progettare sistemi che si adattano a cambiamenti ambientali è difficile
+		\item \textbf{Adattabilità:} Progettare sistemi che si adattano a cambiamenti ambientali è \alert{difficile}
 		\begin{itemize}
 			\item \emph{Unknown unknowns}
 		\end{itemize}
 		\item Come faccio a creare sistemi che si adattano all'ambiente senza doverli progettare manualmente?
 		\begin{itemize}
-			\item Osserviamo di nuova la natura :)
-			\item Adattamento lento: \emph{evoluzione}
-			\item Adattamento veloce: \emph{apprendimento}
+			\item Osserviamo di nuova la natura \alert{\faSmileO}
+			\item Adattamento \emph{lento}: \textbf{\emph{evoluzione}}
+			\item Adattamento \emph{veloce}: \textbf{\emph{apprendimento}}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 	\subsection{Algoritmi Genetici}
-\begin{frame}{Algoritmi Genetici}
+%\begin{frame}{Algoritmi Genetici}
 
-\end{frame}
-\begin{frame}{Limiti degli Algoritmi Genetici}
-\end{frame}
+%\end{frame}
+%\begin{frame}{Limiti degli Algoritmi Genetici}
+%\end{frame}
 	\subsection{Apprendimento per Rinforzo multi-agente}
 
 	{
@@ -369,52 +411,306 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 	
 		\begin{center}
 		\Large\textbf{Apprendimento Automatico} \\
-		
+		\large{
+		Si dice che un programma apprende dall’esperienza \textbf{E} con riferimento a un insieme di compiti \textbf{T} e con misurazione della performance \textbf{P}, se le sue performance nei compiti \textbf{T}, misurate tramite \textbf{P}, migliorano con l’esperienza \textbf{E}}
 		\end{center}
+
+		\url{http://www.r2d3.us/visual-intro-to-machine-learning-part-1/}
 	
 		\vspace{1cm}	
 	}
 \end{frame}
 }
-\begin{frame}{Modalità di Apprendimento}
+\begin{frame}{Modalità di Apprendimento - Supervisionato}
+	Apprendimento tramite esempi \textbf{etichettati}
 	\begin{itemize}
-		\item \textbf{Apprendimento Supervisionato} \faArrowRight ~ L'agente apprende da esempi etichettati
-		\item \textbf{Apprendimento Non Supervisionato} \faArrowRight ~ L'agente apprende da esempi non etichettati
-		\item \textbf{Apprendimento per Rinforzo} \faArrowRight ~ L'agente apprende da interazioni con l'ambiente
+		\item Classificazione di immagini (e.g., riconoscimento di cifre)
+		\item Predizione di valori (\emph{regressione}) (e.g., prezzo di una casa)
+	\end{itemize}
+	\centering
+
+	\includegraphics[height=5cm]{img/supervised-learning.png}
+\end{frame}
+
+\begin{frame}{Modalità di Apprendimento - Non Supervisionato}
+	L'apprendimento avviene tramite esempi \textbf{non etichettati}
+	\begin{itemize}
+		\item \textbf{Clustering} \faArrowRight ~ Playlists automatiche
+	\end{itemize}
+	\centering
+	\includegraphics[height=5cm]{img/unsupervised-learning.png}
+\end{frame}
+
+\begin{frame}{Modalità di Apprendimento - Per Rinforzo}
+	Un \textbf{agente} apprende tramite \alert{feedback} (positivo o negativo) dall'ambiente a seguito di azioni compiute
+	\begin{itemize}
+		\item Agente: entità \emph{autonoma} che è capace di percepire l'ambiente e compiere azioni 
+		\item Agenti Intelligenti \faArrowRight ~ Chatbot, robotica, videogames
+	\end{itemize}
+	\begin{center}
+	\includegraphics[height=5cm]{img/reinforcement-learning.png}
+	\end{center}
+\end{frame}
+\begin{frame}{Apprendere cosa?}
+	\begin{exampleblock}{Reti Neurali Artificiali}
+		Le reti neurali artificiali sono modelli matematici 
+		che simulano il funzionamento del cervello umano.
+		\begin{itemize}
+			\item \textbf{Neurone} \faArrowRight ~ Unità di calcolo; \textbf{Connessione} \faArrowRight ~ Peso tra neuroni; \textbf{Strati} \faArrowRight ~ Organizzazione dei neuroni
+		\end{itemize}
+		L'obiettivo è \alert{apprendere} i pesi delle connessioni in modo che la rete possa risolvere un compito specifico.
+	\end{exampleblock}
+	\begin{center}
+	\includegraphics[width=0.4\textwidth]{img/ann.png}
+	\end{center}
+\end{frame}
+\begin{frame}{Apprendimento per Rinforzo - Perché}
+	\includegraphics[width=\textwidth]{img/reward-enough.png}
+\end{frame}
+
+\begin{frame}{Apprendimento per Rinforzo - Perché}
+	\begin{center}
+	\includegraphics[height=7cm]{img/nature-paper.png}
+	\includegraphics[height=7cm]{img/atari-dqn.png}
+	\end{center} 
+\end{frame}
+
+\begin{frame}{Apprendimento per Rinforzo - Perché}
+	\begin{center}
+		\includegraphics[height=6cm]{img/emegence-of-motion.png}
+		\includegraphics[height=6cm]{img/deep-mind-robot.png}
+	\end{center} 
+\end{frame}
+
+\begin{frame}{Apprendimento per Rinforzo - Perché} 
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/human-feedback.png}
+\end{frame}
+
+\begin{frame}{Apprendimento per Rinforzo - Perché}
+	\begin{itemize}
+		\item Meccanismo di apprendimento \alert{generale}
+		\begin{itemize}
+			\item Verso l'intelligenza artificiale generale?
+		\end{itemize}
+		\item Cosa succede se più agenti apprendono insieme?
+		\begin{itemize}
+			\item Apprendimento per rinforzo multi-agente
+			\item Task molto più complesso e ancora considerato come area aperta di ricerca
+			\item Possiamo usarlo per avere un'intelligenza collettiva?
+		\end{itemize}
 	\end{itemize}
 \end{frame}
-\begin{frame}{Apprendimento per Rinforzo}
-	\begin{alertblock}{Definizione}
+\begin{frame}{Apprendimento per Rinforzo - Verso l'intellingenza Collettiva}
+	\centering
+	\includegraphics[height=7cm]{img/COIN.png}
+\end{frame}
+\begin{frame}{Apprendimento per Rinforzo Multi-Agente}
+	Sistema multi-agente in cui g	li agenti apprendono \emph{concorrentemente} per massimizzare una \emph{funzione di utilità} (locale o comune)
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/marl.png}
+\end{frame}
+\begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Esempi}
+	\includegraphics[width=\textwidth]{img/hide-and-seek.png}
+\end{frame}
+\begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Assi}
+	\begin{minipage}{0.32\textwidth}
+		\centering
+		\textbf{Competitivo}
+		\includegraphics[width=\textwidth]{example-image-a}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.32\textwidth}
+		\centering
+		\textbf{\alert{Cooperativo}}
+		\includegraphics[width=\textwidth]{example-image-b}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.32\textwidth}
+		\centering
+		\textbf{Mixed}
+		\includegraphics[width=\textwidth]{example-image-c}
+	\end{minipage}
+\end{frame}
+\begin{frame}{Policy di Apprendimento}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\alert{\textbf{Policy Omogenee}}
 		\begin{itemize}
-			\item \emph{Apprendimento per rinforzo} \faArrowRight ~ L'agente apprende a compiere azioni
+			\item Tutti gli agenti condividono la \textbf{stessa} policy di apprendimento.
+			\item {\color{green}\faThumbsUp} ~ \emph{Vantaggi}:
+			\begin{itemize}
+				\item Semplicità di implementazione.
+				\item Facilità di coordinamento.
+			\end{itemize}
+			\item {\color{red}\faThumbsDown} ~ \emph{Svantaggi}:
+			\begin{itemize}
+				\item Limitata diversità comportamentale.
+				\item Potenziale inefficienza in ambienti complessi.
+			\end{itemize}
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\textbf{Policy Eterogenee}
+		\begin{itemize}
+			\item Ogni agente può avere una policy di apprendimento diversa.
+			\item {\color{green}\faThumbsUp} ~ \emph{Vantaggi}:
+			\begin{itemize}
+				\item Maggiore diversità comportamentale.
+				\item Potenziale per una maggiore efficienza in ambienti complessi.
+			\end{itemize}
+			\item {\color{red}\faThumbsDown} ~ \emph{Svantaggi}:
+			\begin{itemize}
+				\item Maggiore complessità di implementazione.
+				\item Difficoltà di coordinamento.
+			\end{itemize}
+		\end{itemize}
+	\end{minipage}
+\end{frame}
+\begin{frame}{Appredimento per Rinforzo Multi-Agente per la IA collettiva}
+	\begin{exampleblock}{Come?}
+		\begin{itemize}
+			\item \textbf{Policy Omogenee} - si può ottenere un comportamento collettivo emergente avendo agenti che apprendono la stessa policy 
+			\item \textbf{Experience Sharing} - Gli agenti condividono le esperienze per imparare dagli altri
+		\end{itemize}
+	\end{exampleblock}
+	\begin{alertblock}{Perché?}
+		\begin{itemize}
+			\item \textbf{Scalabilità} - Sistemi che crescono in numero di agenti (visto che la policy è la stessa per tutti)
+			\item \textbf{Robustezza} - I sistemi sono più robusti a guasti
+			\item \textbf{Semplicità} - È più semplice coordinare agenti che apprendono la stessa policy
 		\end{itemize}
 	\end{alertblock}
 \end{frame}
-\begin{frame}{Reti Neurali}
-	\begin{itemize}
-		\item \textbf{Perceptron} \faArrowRight ~ La più semplice rete neurale
-		\item \textbf{Reti Neurali Convoluzionali} \faArrowRight ~ Usate per l'elaborazione di immagini
-		\item \textbf{Reti Neurali Ricorrenti} \faArrowRight ~ Usate per l'elaborazione di sequenze
-	\end{itemize}
-\end{frame}
-\begin{frame}{Apprendimento per Rinforzo Multi-Agente}
 
+\begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Esempi}
+	\begin{center}
+	\includegraphics[width=0.8\textwidth]{img/learning-to-flock}
+	\end{center}
+	\begin{center}
+	\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{img/flock-3.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{img/flock-2.png}
+	\end{minipage}
+	\end{center}
 \end{frame}
-\begin{frame}{Apprendimenti per Rinforzo Multi-Agente -- Esempi}
+\begin{frame}{Apprendimento per Riforzo Multi-Agente - Limiti}
+	\includegraphics[width=\textwidth]{img/cooperative-ai.png}
+\end{frame}
 
-\end{frame}
-\begin{frame}{Apprendimenti per Rinforzo Multi-Agente -- Assi}
-
-\end{frame}
 \section{Direzioni di Ricerca}
 	\subsection{Sistemi Ibridi}
 \begin{frame}{Sistemi Ibridi}
+	\begin{exampleblock}{Come?}
+		\begin{itemize}
+			\item Combinazione di approcci manuali e automatici all'interno di un unico sistema
+			\item Questa cosa può avvenire a diversi livelli:
+			\begin{itemize}
+				\item All'interno dell'apprendimento: si sfruttano approcci manuali per guidare l'apprendimento automatico
+				\item A livello di infrastruttura: gli approcci manuali guidano la progettazione di sistemi automatici
+			\end{itemize}
+		\end{itemize}
+	\end{exampleblock}
+	\begin{alertblock}{Perché}
+		\begin{itemize}
+			\item Si semplifica la progettazione di sistemi collettivi adattativi
+			\begin{itemize}
+				\item Si aggiunge conoscenza di dominio al processo di apprendimento
+			\end{itemize}
 
+			\item Risultati molti più robusti rispetto ad approcci puramente automatici e puramente manuali
+			\begin{itemize}
+				\item Adattabilità e scalabilità dei sistemi
+			\end{itemize}
+		\end{itemize}
+	\end{alertblock}
 \end{frame}
+\begin{frame}{Field-Informed Reinforcement Learning}
 
+\begin{minipage}{0.35\textwidth}
+	\begin{itemize}
+		\item L'apprendimento multi-agente tipicamente necessita di un grande numero di esempi per imparare semplici modelli di interazione
+		\item \textbf{Field-informed RL} \faArrowRight ~ Il processo di apprendimento è guidato da informazioni collettive calcolate con i campi computazionali
+	\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{0.6\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{img/gnn.png}
+	\includegraphics[width=\textwidth]{img/gnn-example.png}
+\end{minipage}
+\end{frame}
+\begin{frame}{Self-Federated Learning}
+\begin{minipage}{0.4\textwidth}
+	\begin{itemize}
+		\item \textbf{Federated Learning}: Processo di apprendimento distribuito in cui i dati rimangono sui dispositivi locali
+		\item \textbf{Self-Federated Learning}: Si creano dei modelli \emph{specializzati} in base al contesto percepito all'interno di \alert{area di influenza}
+	\end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\centering
+\includegraphics[width=\textwidth]{img/cluster-federated.png}
+\includegraphics[width=0.8\textwidth]{img/field-informed.png}
+\end{minipage}
+\end{frame}
+\begin{frame}{Component offloading}
+\begin{minipage}{0.4\textwidth}
+	\begin{itemize}
+		\item \textbf{Component Offloading}: Si sposta la computazione da un dispositivo a un altro (edge-cloud continuum)
+		\item \textbf{Offloading collettivo}: Questa policy dipende da informazioni collettive e non solo da informazioni locali
+		\item \textbf{Informed-approach}: Si sfrutta la macroprogrammazione per informare il processo di apprendimento con tale informazione
+	\end{itemize}
+\end{minipage}
+\begin{minipage}{0.58\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{img/task-offloading.png}
+	\includegraphics[width=\textwidth]{img/task-offloading-2.png}
+\end{minipage}
+\end{frame}
 \subsection{Modelli Fondazionali per l'Intelligenza Collettiva}
 \begin{frame}{Modelli Fondazionali per l'Intelligenza Collettiva}
-
+	\begin{exampleblock}{Modelli Fondazionali}
+		I modelli fondazionali sono nati nel contesto degli LLM per definire delle reti neurali profonde che sono capaci di essere usate in task diversi
+	\end{exampleblock}
+	\begin{alertblock}{Caratteristiche}
+		\begin{itemize}
+			\item L'apprendimento avviene in modo non strutturato su una grande quantità di dati
+			\item Adattare il modello a nuovi task richiede pochi esempi (a volte zero, zero-shot learning)
+		\end{itemize}
+	\end{alertblock}
+	\begin{block}{Cambiamento di paradigma}
+		\begin{itemize}
+			\item Per riadattare un modello in un nuovo dominio prima c'era bisogno di riformulare il problema e ri-addestrare il modello
+			\item Con i modelli fondazionali, si può riadattare il modello in pochi passaggi
+			\begin{itemize}
+				\item \emph{Fine-tuning}
+				\item \emph{Prompt-engineering}
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}{Modelli Fondazionali - Cambio di paradigma}
+\centering
+\includegraphics[width=0.8\textwidth]{img/fondational-models.png}
+\end{frame}
+\begin{frame}{Modelli Fondazionali - GATO}
+	\centering
+	\includegraphics[height=7cm]{img/gato.png}
+\end{frame}
+\begin{frame}{Modelli Fondazionali per l'AI collettiva -- prime idee}
+\centering
+\includegraphics[width=0.5\textwidth]{img/ci.png}
+\begin{itemize}
+	\item \textbf{Communicazione universale}: cercare un modello fondazionale che catturi l'essenza della comunicazione tra agenti
+	\item \textbf{Decomposizione globale-locale}: partendo da un modelo fondazionale globale, permettere di suddividerlo in sotto-modelli locali
+\end{itemize}
 \end{frame}
 \begin{frame}{Takeaways}
 	\begin{itemize}
@@ -438,13 +734,34 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 		\end{itemize}
 	\end{itemize}
 \end{frame}
+
+{
+
+	\setbeamercolor{background canvas}{bg=custombg} % Set background to foreground color
+	\setbeamercolor{normal text}{fg=customfg}    
+	
+	\begin{frame}[c]
+		
+		{
+		\color{customfg}
+	
+		\begin{center}
+		\Large\textbf{Grazie per l'attenzione!} \\
+	
+		\large{\url{https://cric96.github.io/}}
+		\end{center}
+	
+		\vspace{1cm}	
+	}
+\end{frame}
+}
 %//
 %===============================================================================
 
 %/////////
 
 %===============================================================================
-\section*{\refname}
+%\section*{\refname}
 %===============================================================================
 
 %/////////
