@@ -78,7 +78,7 @@
 		\color{customfg}
 				\item \alert{\faGraduationCap} ~ \textbf{Dottorato} in Ingegneria e Scienze Informatiche (2024)
 				\item \alert{\faPencilSquare} ~ \textbf{Professore a contratto} @ Università di Bologna (campus di Cesena)
-				\item \alert{\faFlask} ~ \textbf{Background}: Ingegneria del Software (Sviluppatore Scala) \& Apprendimento Automatico (Apprendimento per Rinforzo)
+				\item \alert{\faFlask} ~ \textbf{Background}: Ingegneria del Software (Sviluppatore Scala) \& Apprendimento Automatico (Apprendimento per Rinforzo) \& Pensiero Computazionale
 				\item \alert{\faSearch} ~ \textbf{Interessi di Ricerca}: Intelligenza Collettiva, Apprendimento per Rinforzo Multi-Agente
 			\end{itemize}
 	}
@@ -89,9 +89,9 @@
 
 \begin{frame}{Outline}
 	\begin{itemize}
-		\item Oggi parleremo di \alert{\textbf{Intelligenza Collettiva}} e \alert{\textbf{Sistemi Collettivi Adattativi}}, focalizzandosi su
+		\item Oggi parleremo di \alert{\textbf{Intelligenza Collettiva}} e \alert{\textbf{Sistemi Collettivi Adattativi}}, focalizzandoci su
 		\begin{itemize}
-			\item Cosa sono e come si differenziano da altri sistemi
+			\item Cosa sono i sistemi collettivi adattativi e come si differenziano da altri sistemi
 			\item Come si progettano sistemi che mostrano intelligenza collettiva
 			\begin{itemize}
 				\item \emph{Approcci manuali} (ispirati biologia, programmazione aggregata)
@@ -148,9 +148,9 @@
 \begin{frame}[fragile]{Animali Sociali}
 % https://cric96.github.io/hello-aarhus/#/3/5/3
 \begin{center}
-\includegraphics[height=3.7cm]{img/example.png}
-\includegraphics[height=3.7cm]{img/fireflies.png}
-\includegraphics[height=3.7cm]{img/school.png}
+	\href{https://youtu.be/IpKL-URul2I}{\includegraphics[height=3.7cm]{img/example.png}}
+	\href{https://www.youtube.com/watch?v=ZGvtnE1Wy6U&t=37s}{\includegraphics[height=3.7cm]{img/fireflies.png}}
+	\href{https://youtu.be/B6M_XgiONoo}{\includegraphics[height=3.7cm]{img/school.png}}
 \end{center}
 In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{\alert{\textbf{intelligenza collettiva}}}.
 \end{frame}
@@ -217,10 +217,10 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \end{frame}
 \begin{frame}{Progettare Sistemi Collettivi Adattativi}
 	\begin{itemize}
-		\item \textbf{Approcci manuali} \faArrowRight ~ Programmazione inspirata (o basata su) sistemi biologici:
+		\item \textbf{Approcci manuali} \faArrowRight ~ Programmazione ispirata (o basata su) sistemi biologici:
 		\begin{itemize}
 			\item \alert{Bottom-up} \faArrowRight ~ Si imita la natura per progettare sistemi collettivi adattativi
-			\item \alert{Top-down} \faArrowRight ~ Inspirandosi dai meccanismi biologici, si introducuno nuove astrazioni per progettare sistemi collettivi adattativi
+			\item \alert{Top-down} \faArrowRight ~ Ispirandosi dai meccanismi biologici, si introducuno nuove astrazioni per progettare sistemi collettivi adattativi
 			\begin{itemize}
 				\item \textbf{Macro programmazione} \faArrowRight ~ Linguaggi di programmazione che inseriscono il collettivo come entità di prima classe
 			\end{itemize}
@@ -241,7 +241,11 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 
 \begin{frame}{Soluzioni Swarm-inspired}
 	\begin{exampleblock}{Definizione}
-		Comportamenti collettivi emergono da interazioni locali tra agenti autonomi
+		Comportamenti collettivi \alert{emergono} da interazioni locali tra \emph{\textbf{agenti autonomi}}
+		\begin{itemize}
+			\item Agente: Entità che può percepire l'ambiente e compiere azioni
+			\item Autonomia: Gli agenti prendono decisioni in modo indipendente e senza intervento diretto e continuo da parte di un supervisore
+		\end{itemize}
 	\end{exampleblock}
 	\begin{block}{Come}
 		\begin{itemize}
@@ -257,18 +261,18 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \end{frame}
 \begin{frame}{Swarm-Inspired - Metropolitana di Tokyo}
 	\centering
-	\includegraphics[width=0.6\textwidth]{img/metro-tokyo.png}
+	\href{https://www.youtube.com/shorts/GwKuFREOgmo}{\includegraphics[width=0.6\textwidth]{img/metro-tokyo.png}}
 \end{frame}
 \begin{frame}{Swarm-Inspired - Robotica di Sciame}
 	\centering
-	\includegraphics[width=\textwidth]{img/kilobot.png}
+	\href{https://www.youtube.com/watch?v=dDsmbwOrHJs&t=53s}{\includegraphics[width=\textwidth]{img/kilobot.png}}
 \end{frame}
 
-\begin{frame}{Limiti degli algoritmi Swarm-Limiti degli algoritmi Swanspired}
+\begin{frame}{Limiti degli algoritmi Swarm-Inspired}
 \centering
-\includegraphics[width=0.8\textwidth]{img/rise-of-swarm.png}
+\href{https://dl.acm.org/doi/10.1145/2428556.2428562}{\includegraphics[width=0.8\textwidth]{img/rise-of-swarm.png}}
 
-{\color{red}\faThumbsDown}~\textbf{Abstraction Gap} {\color{red}\faThumbsDown} ~\textbf{Scalabilità} {\color{red}\faThumbsDown} ~\textbf{Robustezza} 
+{\color{red}\faThumbsDown}~\textbf{Gap d'astrazione} {\color{red}\faThumbsDown} ~\textbf{Scalabilità} {\color{red}\faThumbsDown} ~\textbf{Robustezza} 
 \end{frame}
 %\begin{frame}{Limiti degli algoritmi Swarm-Inspired}
 %	\begin{itemize}
@@ -300,9 +304,9 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \begin{frame}{Macro programmazione}
 	\begin{alertblock}{Perché}
 		\begin{itemize}
-			\item Carico cognitivo ridotto \faArrowRight ~ Si può pensare a livello di collettivo, non di singoli agenti (e.g. \emph{swarm programming})
-			\item \emph{Abstraction gap} ridotto \faArrowRight ~ Si può progettare sistemi collettivi adattativi partendo da astrazioni più alte
-			\item Risultati formali \faArrowRight ~ Si possono ottenere risultati formali su sistemi collettivi adattativi a partire dai linguaggi di programmazione
+			\item \underline{Carico cognitivo} ridotto \faArrowRight ~ Si può pensare a livello di collettivo, non di singoli agenti (e.g. \emph{swarm programming})
+			\item \underline{Gap d'astrazione} ridotto \faArrowRight ~ Si può progettare sistemi collettivi adattativi partendo da astrazioni più alte
+			\item Risultati \underline{formali} \faArrowRight ~ Si possono ottenere risultati formali su sistemi collettivi adattativi a partire dai linguaggi di programmazione
 		\end{itemize}
 	\end{alertblock}
 	\begin{block}{Esempi}
@@ -321,7 +325,7 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \begin{frame}{Aggregate Computing - Intuizione}
 	\centering
 	\Large Programma l'\alert{aggregato}, non gli \emph{individui}
-	\includegraphics[width=0.6\textwidth]{img/overview.png}
+	\href{https://ieeexplore.ieee.org/document/7274429}{\includegraphics[width=0.6\textwidth]{img/overview.png}}
 \end{frame}
 \begin{frame}{Aggregate Computing - Intuizione}
 	\begin{center}
@@ -343,18 +347,18 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 \end{frame}
 \begin{frame}{Aggregate Computing - Casi di Studio}
 	\begin{minipage}{0.32\textwidth}
-		\includegraphics[width=\textwidth]{img/crowd-steering.png}
+		\href{https://youtu.be/606ObQwQuaE}{\includegraphics[width=\textwidth]{img/crowd-steering.png}}
 		\centering
 		\textbf{Crowd Steering}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.32\textwidth}
-		\includegraphics[width=\textwidth]{img/iot.png}
+		\href{https://youtu.be/nWLaglM0EkY}{\includegraphics[width=\textwidth]{img/iot.png}}
 		\centering
 		\textbf{Smart Cities}
 	\end{minipage}
 	\begin{minipage}{0.32\textwidth}
-		\includegraphics[width=\textwidth]{img/smart-tracking.png}
+		\href{https://youtu.be/yuaY_8Vr3oc}{\includegraphics[width=\textwidth]{img/smart-tracking.png}}
 		\centering
 		\textbf{Smart Cameras}
 	\end{minipage}
@@ -368,7 +372,8 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 		\includegraphics[height=2.8cm]{img/flock.png}
 	  \end{center}
 	  \begin{center}
-		\includegraphics[height=2.8cm]{img/shapes.png}
+		\href{https://github.com/scafi/macro-swarm}{
+		\includegraphics[height=2.8cm]{img/shapes.png}}
 	  \end{center}
 	  %\begin{center}
 	%\includegraphics[height=2.3cm]{img/team-formation.png}
@@ -465,72 +470,74 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 	\end{center}
 \end{frame}
 \begin{frame}{Apprendimento per Rinforzo - Perché}
-	\includegraphics[width=\textwidth]{img/reward-enough.png}
+	\href{https://www.sciencedirect.com/science/article/pii/S0004370221000862}{\includegraphics[width=\textwidth]{img/reward-enough.png}}
 \end{frame}
 
 \begin{frame}{Apprendimento per Rinforzo - Perché}
 	\begin{center}
-	\includegraphics[height=7cm]{img/nature-paper.png}
-	\includegraphics[height=7cm]{img/atari-dqn.png}
+	\href{https://www.nature.com/articles/nature14236}{
+	\includegraphics[height=7cm]{img/nature-paper.png}}
+	\href{https://www.youtube.com/watch?v=V1eYniJ0Rnk}{
+	\includegraphics[height=7cm]{img/atari-dqn.png}}
 	\end{center} 
 \end{frame}
 
 \begin{frame}{Apprendimento per Rinforzo - Perché}
 	\begin{center}
+		\href{https://arxiv.org/abs/1707.02286}{
 		\includegraphics[height=6cm]{img/emegence-of-motion.png}
-		\includegraphics[height=6cm]{img/deep-mind-robot.png}
+		}
+		\href{https://www.youtube.com/watch?v=hx_bgoTF7bs}{
+		\includegraphics[height=6cm]{img/deep-mind-robot.png}}
 	\end{center} 
 \end{frame}
 
 \begin{frame}{Apprendimento per Rinforzo - Perché} 
 	\centering
-	\includegraphics[width=0.8\textwidth]{img/human-feedback.png}
+	\href{https://openai.com/index/chatgpt/}{\includegraphics[width=0.8\textwidth]{img/human-feedback.png}}
 \end{frame}
 
 \begin{frame}{Apprendimento per Rinforzo - Perché}
 	\begin{itemize}
-		\item Meccanismo di apprendimento \alert{generale}
+		\item L'apprendimento per rinforzo è un meccanismo di apprendimento \alert{generale}
 		\begin{itemize}
-			\item Verso l'intelligenza artificiale generale?
+			\item Permette di apprendere comportamenti complessi in modo autonomo
+			\item Viene considerato un passo verso l'intelligenza artificiale generale
 		\end{itemize}
-		\item Cosa succede se più agenti apprendono insieme?
+		\item \alert{Estensione naturale}: Cosa succede se più agenti apprendono \emph{insieme}?
 		\begin{itemize}
-			\item Apprendimento per rinforzo multi-agente
-			\item Task molto più complesso e ancora considerato come area aperta di ricerca
-			\item Possiamo usarlo per avere un'intelligenza collettiva?
+			\item Nasce l'apprendimento per rinforzo \alert{multi-agente}
+			\item Task molto più complesso: gli agenti devono imparare a coordinarsi
+			\item Area attiva di ricerca con grandi potenzialità
 		\end{itemize}
+		\item \alert{Domanda chiave}: Possiamo sfruttarlo per far emergere un'intelligenza collettiva?
 	\end{itemize}
 \end{frame}
-\begin{frame}{Apprendimento per Rinforzo - Verso l'intellingenza Collettiva}
+\begin{frame}{Apprendimento per Rinforzo - Verso l'intelligenza Collettiva}
 	\centering
-	\includegraphics[height=7cm]{img/COIN.png}
+	\href{https://arxiv.org/abs/cs/9908014}{\includegraphics[height=7cm]{img/COIN.png}}
 \end{frame}
 \begin{frame}{Apprendimento per Rinforzo Multi-Agente}
 	Sistema multi-agente in cui g	li agenti apprendono \emph{concorrentemente} per massimizzare una \emph{funzione di utilità} (locale o comune)
 	\centering
 	\includegraphics[width=0.8\textwidth]{img/marl.png}
 \end{frame}
-\begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Esempi}
-	\includegraphics[width=\textwidth]{img/hide-and-seek.png}
+\begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Esempio}
+	\href{https://www.youtube.com/watch?v=kopoLzvh5jY}{\includegraphics[width=\textwidth]{img/hide-and-seek.png}}
 \end{frame}
 \begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Assi}
-	\begin{minipage}{0.32\textwidth}
+	\begin{minipage}{0.45\textwidth}
 		\centering
-		\textbf{Competitivo}
-		\includegraphics[width=\textwidth]{example-image-a}
+		%\textbf{Competitivo}
+		\includegraphics[width=\textwidth]{img/competitive.png}
 	\end{minipage}
 	\hfill
-	\begin{minipage}{0.32\textwidth}
+	\begin{minipage}{0.45\textwidth}
 		\centering
-		\textbf{\alert{Cooperativo}}
-		\includegraphics[width=\textwidth]{example-image-b}
+		%\textbf{\alert{Cooperativo}}
+		\fbox{\includegraphics[width=\textwidth]{img/cooperative.png}}
 	\end{minipage}
-	\hfill
-	\begin{minipage}{0.32\textwidth}
-		\centering
-		\textbf{Mixed}
-		\includegraphics[width=\textwidth]{example-image-c}
-	\end{minipage}
+
 \end{frame}
 \begin{frame}{Policy di Apprendimento}
 	\begin{minipage}{0.45\textwidth}
@@ -587,7 +594,8 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 
 \begin{frame}{Apprendimento per Rinforzo Multi-Agente -- Esempi}
 	\begin{center}
-	\includegraphics[width=0.8\textwidth]{img/learning-to-flock}
+	\href{https://arxiv.org/abs/2105.07933}{
+	\includegraphics[width=0.8\textwidth]{img/learning-to-flock}}
 	\end{center}
 	\begin{center}
 	\begin{minipage}{0.45\textwidth}
@@ -601,8 +609,9 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 	\end{minipage}
 	\end{center}
 \end{frame}
-\begin{frame}{Apprendimento per Riforzo Multi-Agente - Limiti}
-	\includegraphics[width=\textwidth]{img/cooperative-ai.png}
+\begin{frame}{Apprendimento per Rinforzo Multi-Agente - Limiti}
+	\href{https://arxiv.org/abs/2012.08630}{
+	\includegraphics[width=\textwidth]{img/cooperative-ai.png}}
 \end{frame}
 
 \section{Direzioni di Ricerca}
@@ -749,6 +758,8 @@ In tutti questi scenari, gli animali/organismi mostrano una sorta di \underline{
 		\Large\textbf{Grazie per l'attenzione!} \\
 	
 		\large{\url{https://cric96.github.io/}}
+
+		%\includegraphics[width=0.2\textwidth]{img/qr-cric96.pdf}
 		\end{center}
 	
 		\vspace{1cm}	
